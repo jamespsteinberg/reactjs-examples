@@ -1,0 +1,17 @@
+# Apache test node
+```
+ab -c 50 -n 500 localhost:3000/fast
+```
+# 50 - concurrency
+# 500 - request count
+
+
+# cluster management
+```
+pm2 start index.js -i 0
+```
+
+# delete index
+```
+pm2 delete index
+```
